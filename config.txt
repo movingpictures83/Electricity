@@ -1,0 +1,6 @@
+Prefix pipelines/Electricity/
+Plugin SSV2CSV inputfile LD2011_2014.txt outputfile LD2011_2014.csv
+Plugin WindowStride inputfile parameters/parameters.windowstride.txt outputfile elect
+Plugin QuantileKL inputfile parameters/parameters.quantilekl.txt outputfile .
+Plugin ExtractTest inputfile parameters/parameters.extracttest.txt outputfile 500_LD2011_2012.txt
+Plugin TransformerPrediction inputfile parameters/parameters.tp.txt outputfile .
